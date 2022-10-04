@@ -1,32 +1,76 @@
+:root{
+    --main-color:#ecfeff;
+    --color-two:#67e8f9;
+    --color-three:#155e75;
+}
+@font-face {
+    font-family:RobotoFont;
+    src: url(./assets/Roboto-LightItalic.ttf);
+}
+@font-face {
+    font-family:AntonFont ;
+    src: url(./assets/Anton-Regular.ttf);
+}
+@font-face {
+    font-family:codeFont  ;
+    src: url(./assets/cnr.otf);
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
+
+
 body{
     display: flex;
     flex-direction: column;
 
 }
+header{
+    
+    display: flex;
+    font-family: AntonFont;
+    padding: 8px;
+   
+    position: sticky;
+    top: 0;
+    
+}
+header img{
+max-width: 36px;
+max-height: 36px;
+align-self: flex-end;
+}
 main{
     display: flex;
     flex-direction: column;
-   
     min-height: 850px;
     background-color: black;
 }
 
+
 .about-me{
-    background-color: red;
+    background-color: var(--color-three);
     flex: 1;
     
 }
+
 .projects{
-    background-color: #111;
-    flex: 3;
+    background-color: var(--main-color);
+    flex: 5;
+}
+.card{
+    width: 500px;
+    background-color: var(--color-two);
 }
 
+
 .contact{
-    background-color: aquamarine;
+    background-color: var(--color-three);
     flex: 1;
+   
 }   
