@@ -11,11 +11,11 @@
 
     <header>
     <a href="./index.html">
-        <h1>T4</h1>
+        <h1 aria-describedby="linked to my home page" aria-label="Logo " >T4</h1>
     </a>
    
     <div class="option-container">
-        <img src="./assets/drop-icon-high.png" alt="drop down icon"></img>
+        <img  src="./assets/drop-icon-high.png" alt="drop down icon"></img>
         <button class="theme-button">night mode</button>
     </div>
     </header>
@@ -28,7 +28,16 @@
             <div class="portrait-container">
                 
                 <picture>
+                    <source 
+                    srcset="./assets/pic1-L.jpg"
+                    media="(min-width: 900px)"
+                  />
+                  <source 
+                    srcset="./assets/pic1-L.jpg"
+                    media="(min-width: 600px)"
+                  />
                     <img   src="./assets/pic1-L.jpg" alt="portrait" >
+
                 </picture>
                 <h2 class="about-heading">ABOUT ME</h2>
                 <p>Hey! 
@@ -68,7 +77,8 @@
 
                     </div>
                  
-                    <p>yo yo yo yo yo</p>
+                    <p>Scuffed calculator is great calculator and can calculate more than
+                         one operator equations and cascade them</p>
                 </div>
 
                 <div class="card">
@@ -85,7 +95,8 @@
                        
                     </div>
                  
-                    <p>yo yo yo yo yo</p>
+                    <p> This project is designed using JavaScript,CSS and HTML.
+                         <br> Your can draw anything you want and select colors and the size of the sketch </p>
                 </div>
 
                 <div class="card">
@@ -101,7 +112,7 @@
                         </div>
                      
                     </div>
-                    <p>yo yo yo yo yo</p>
+                    <p>Rock Paper Scissor vs your computer  with league of legends characters </p>
                 
                 </div>
 
@@ -119,7 +130,7 @@
                       
                     </div>
                  
-                    <p>yo yo yo yo yo</p>
+                    <p>Just a well designed dashboard</p>
                 </div>
 
                 <div class="card">
@@ -133,7 +144,7 @@
                         </div>
                       
                     </div>
-                    <p>yo yo yo yo yo</p>
+                    <p>Test your memory with the Simon game</p>
                 
                 </div>
 
@@ -150,7 +161,7 @@
                         </div>
                         
                     </div>
-                    <p>yo yo yo yo yo</p>
+                    <p> Play with drums using the mouse or the keyboard </p>
                 </div>
              </div>
         </section>
@@ -160,16 +171,28 @@
         <div class="info">
             <h2>Contact me</h2>
             <p>Please Get in touch if you think our work could be mutually beneficial!</p>
-            <span><img src="./assets/phone-outline.png" alt="phone icon">+962787688045</span>
-            <span><img src="./assets/email.png" alt="email icon"> hamzatay2012@gmail.com</span>
+            <span><img tabindex="-1" src="./assets/phone-outline.png" alt="phone icon">+962787688045</span>
+            <span><img tabindex="-1" src="./assets/email.png" alt="email icon"> hamzatay2012@gmail.com</span>
             <div class="contact-icons">
-                <img src="./assets/github.png" alt="git icon">
-                <img src="./assets/linkedin.png" alt="linkedin icon">
-                <img src="./assets/facebook.png" alt="facebook icon">
+                <a href="https://github.com/HamzaT4">
+                    <img aria-label='My github' src="./assets/github.png" alt="git icon"></a>
+                <a href="https://www.linkedin.com/in/hamzat4/">
+                    <img aria-label='My Linkedin' src="./assets/linkedin.png" alt="linkedin icon"></a>
+                <a href="https://www.facebook.com/hamza.tayfour.33">
+                    <img aria-label='My Facebook' src="./assets/facebook.png" alt="facebook icon"></a>
             </div>
         </div>
 
-        <picture class="info-pic">
+        <picture  class="info-pic">
+
+            <source 
+                    srcset="./assets/pic2-L.jpg"
+                    media="(min-width: 900px)"
+                  />
+            <source
+                  srcset="./assets/pic2-L.jpg"
+                  media="(min-width:600px)"
+                  />
             <img src="./assets/pic2-L.jpg" alt="">
         </picture>
 

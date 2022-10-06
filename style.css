@@ -271,6 +271,7 @@ img[alt="portrait"]{
     .info span>img{
         transform: scale(0);
         position:absolute;
+        
     }
     .info-pic{
         width: 100%;
